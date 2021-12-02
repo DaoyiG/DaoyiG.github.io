@@ -1,7 +1,7 @@
 @InProceedings{ruhkamp2021attention,
     title = {Attention meets Geometry: Geometry Guided Spatial-Temporal Attention for Consistent Self-Supervised Monocular Depth Estimation},
     author = {Patrick Ruhkamp and Daoyi Gao and Hanzhi Chen and Nassir Navab and Benjamin Busam},
-    booktitle = {IEEE International Conference on 3D Vision},
+    booktitle =  {IEEE International Conference on 3D Vision (3DV)},
     year = {2021},
     month = {December}
 }
