@@ -63,6 +63,53 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="ppp_stop()" onmouseover="ppp_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='ppp_image'>
+                      <img src='images/PPP.png' width="160">
+                    </div>
+                    <img src='images/PPP.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function ppp_start() {
+                      document.getElementById('ppp_image').style.opacity = "1";
+                    }
+
+                    function ppp_stop() {
+                      document.getElementById('ppp_image').style.opacity = "0";
+                    }
+                    ppp_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2112.03810">
+                    <papertitle>Polarimetric Pose Prediction</papertitle>
+                  </a>
+                  <br>
+                  <strong>Daoyi Gao*</strong>,
+                  <a href=""> Yitong Li*</a>,
+                  <a herf="http://campar.in.tum.de/Main/PatrickRuhkamp">Patrick Ruhkamp*</a>,
+                  <a href="">Magdalena Wysock*</a>,
+                  <a href="">HyunJun Jung</a>,
+                  <a href="">Pengyuan Wang</a>,
+                  <a href="">Arturo Guridi</a>,
+                  <a href="https://www.in.tum.de/campar/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,
+                  <a href="https://www.in.tum.de/campar/members/benjamin-busam/">Benjamin Busam</a>
+                  <br>
+                  <em>arXiv</em>, 2021
+                  <br>
+                  <!-- <a href="https://daoyig.github.io/attention_meets_geometry/">project page</a> / -->
+                  <a href="https://arxiv.org/abs/2110.08192">arXiv</a>
+                  <!-- <a href="data/tcd.txt">bibtex</a> / -->
+                  <!-- <a href="https://github.com/DaoyiG/TC-Depth">code</a> -->
+                  <p></p>
+                  <p>We proposed a hybrid model that utilizes polarizaiotn information with physical priors in
+                    a data-driven learning strategy to improve the accuracy of pose predictions for photometric
+                    challenging objects.</p>
+                  <p>* Equal contribution. Alphabetical order.</p>
+                </td>
+              </tr>
 
               <tr onmouseout="tcd_stop()" onmouseover="tcd_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -93,8 +140,8 @@
                   <a herf="http://campar.in.tum.de/Main/PatrickRuhkamp">Patrick Ruhkamp*</a>,
                   <strong>Daoyi Gao*</strong>,
                   <a href="https://hanzhic.github.io/">Hanzhi Chen*</a>,
-                  <a href="http://campar.in.tum.de/Main/NassirNavabCv">Nassir Navab</a>,
-                  <a href="http://campar.in.tum.de/Main/BenjaminBusam">Benjamin Busam</a>
+                  <a href="https://www.in.tum.de/campar/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,
+                  <a href="https://www.in.tum.de/campar/members/benjamin-busam/">Benjamin Busam</a>
                   <br>
                   <em>3DV</em>, 2021
                   <br>
@@ -137,8 +184,8 @@
                   <a herf="http://campar.in.tum.de/Main/PatrickRuhkamp">Patrick Ruhkamp*</a>,
                   <strong>Daoyi Gao*</strong>,
                   <a href="https://hanzhic.github.io/">Hanzhi Chen*</a>,
-                  <a href="http://campar.in.tum.de/Main/NassirNavabCv">Nassir Navab</a>,
-                  <a href="http://campar.in.tum.de/Main/BenjaminBusam">Benjamin Busam</a>
+                  <a href="https://www.in.tum.de/campar/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,
+                  <a href="https://www.in.tum.de/campar/members/benjamin-busam/">Benjamin Busam</a>
                   <br>
                   <em>ICCV Workshop: Self-supervised Learning for Next-Generation Industry-level Autonomous
                     Driving</em>, 2021
