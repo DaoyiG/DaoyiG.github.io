@@ -1,0 +1,6 @@
+@article{gao2023diffcad,
+title= {DiffCAD: Weakly-Supervised Probabilistic CAD Model Retrieval and Alignment from an RGB Image},
+author={Gao, Daoyi and Rozenberszki, David and Leutenegger, Stefan and Dai, Angela},
+booktitle={ArXiv Preprint},
+year={2023}
+}
