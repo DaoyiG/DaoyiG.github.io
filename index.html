@@ -30,13 +30,12 @@
                       href="https://www.tum.de/">Technical University of Munich</a>.
                   </p>
                   <p>Previously, I graduated from <a
-                      href="https://www.in.tum.de/fuer-studieninteressierte/master-studiengaenge/robotics-cognition-intelligence/">Robotics,
-                      Cognition, Intelligence</a> at TUM.
-                    Prior to this, I obtained my B.E. from <a href="https://ev.buaa.edu.cn/">Beihang University
-                      (BUAA)</a> majored in mechatronics.
+                      href="https://www.in.tum.de/fuer-studieninteressierte/master-studiengaenge/robotics-cognition-intelligence/">Robotics, Cognition, Intelligence</a> at TUM.
+                    <!-- Prior to this, I obtained my B.E. from <a href="https://ev.buaa.edu.cn/">Beihang University
+                      (BUAA)</a> majored in mechatronics. -->
                   </p>
                   <p>
-                    My research interests are in the field of 3D computer vision, retrieval-based scene understanding.
+                    My research interests are in the field of 3D computer vision, CAD-driven scene understanding, and 3D generative modeling.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:daoyi.gao@tum.de">Email</a> &nbsp/&nbsp
@@ -66,6 +65,47 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="meshart_stop()" onmouseover="meshart_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='meshart_image'>
+                      <video width="160" autoplay loop muted playsinline>
+                        <source src="images/meshart/000344_crop.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <img src='images/meshart/000344_0.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function meshart_start() {
+                      document.getElementById('meshart_image').style.opacity = "1";
+                    }
+
+                    function meshart_stop() {
+                      document.getElementById('meshart_image').style.opacity = "0";
+                    }
+                    meshart_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <!-- <a href="https://arxiv.org/abs/2311.18610"> -->
+                  <papertitle>MeshART: Generating Articulated Meshes with Structure-guided Transformers</papertitle>
+                  </a>
+                  <br>
+                  <strong>Daoyi Gao</strong>,
+                  <a href="https://nihalsid.github.io">Yawar Siddiqui</a>,
+                  <a href="https://craigleili.github.io">Lei Li</a>,
+                  <a href="https://www.3dunderstanding.org/index.html">Angela Dai</a>
+                  <br>
+                  <em>arXiv</em>, 2024
+                  <br>
+                  <a href="https://daoyig.github.io/Mesh_Art/">project page</a> /
+                  <!-- <a href="https://arxiv.org/abs/2311.18610">paper</a> / -->
+                  <!-- <a href="data/diffcad.txt">bibtex</a> / -->
+                  <!-- <a href="https://github.com/DaoyiG?tab=repositories">code</a> -->
+                  <p></p>
+                  <p>We proposed a hierarchical transformer-based approach to generate articulated 3D meshes with clean, compact geometry.</p>
+                </td>
+              </tr>
               <tr onmouseout="diffcad_stop()" onmouseover="diffcad_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
