@@ -65,6 +65,47 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              <tr onmouseout="pg3d_stop()" onmouseover="pg3d_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='pg3d_image'>
+                      <video width="160" autoplay loop muted playsinline>
+                        <source src="images/pg3d/Teaser.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <img src='images/pg3d/Picture1.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function pg3d_start() {
+                      document.getElementById('pg3d_image').style.opacity = "1";
+                    }
+
+                    function pg3d_stop() {
+                      document.getElementById('pg3d_image').style.opacity = "0";
+                    }
+                    pg3d_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                   <a href="https://arxiv.org/pdf/2412.11596">
+                  <papertitle>ProcGen3D: Learning Neural Procedural Graph Representations for Image-to-3D Reconstruction</papertitle>
+                  </a>
+                  <br>
+                  <a href="https://xzhang-t.github.io">Xinyi Zhang</a>,
+                  <strong>Daoyi Gao</strong>,
+                  <a href="https://naiqili.github.io">Naiqi Li</a>,
+                  <a href="https://www.3dunderstanding.org/index.html">Angela Dai</a>
+                  <br>
+                  <em>arXiv</em>, 2025
+                  <br>
+                  <a href="https://xzhang-t.github.io/project/ProcGen3D/">project page</a> /
+                  <a href="https://arxiv.org/abs/2511.07142v1">paper</a> 
+                  <!-- <a href="data/diffcad.txt">bibtex</a> / -->
+                  <!-- <a href="https://github.com/DaoyiG/MeshArt">code</a> -->
+                  <p></p>
+                  <p>We introduce ProcGen3D, a new approach for 3D content creation by generating procedural graph abstractions of 3D objects, which can then be decoded into rich, complex 3D assets. </p>
+                </td>
+              </tr>
               <tr onmouseout="meshart_stop()" onmouseover="meshart_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -99,9 +140,9 @@
                   <em>CVPR</em>, 2025
                   <br>
                   <a href="https://daoyig.github.io/Mesh_Art/">project page</a> /
-                  <a href="https://arxiv.org/pdf/2412.11596">paper</a> 
+                  <a href="https://arxiv.org/pdf/2412.11596">paper</a> /
                   <!-- <a href="data/diffcad.txt">bibtex</a> / -->
-                  <!-- <a href="https://github.com/DaoyiG?tab=repositories">code</a> -->
+                  <a href="https://github.com/DaoyiG/MeshArt">code</a>
                   <p></p>
                   <p>We proposed a hierarchical transformer-based approach to generate articulated 3D meshes with clean, compact geometry.</p>
                 </td>
