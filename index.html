@@ -1,406 +1,380 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Daoyi Gao</title>
-
   <meta name="author" content="Daoyi Gao">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daoyi Gao, PhD student at the 3D AI Lab, Technical University of Munich. 3D computer vision and 3D generative modeling.">
+  <meta name="keywords" content="Daoyi Gao, 3D computer vision, 3D generative modeling, TUM">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- Bootstrap & MDB -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+  <!-- Styles: al-folio theme, then the site's own additions (accent colour is set in custom.css) -->
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎾</text></svg>">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="canonical" href="https://daoyig.github.io/">
+
+  <!-- Light/dark theme -->
+  <script src="assets/js/theme.js"></script>
 </head>
 
-<body>
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Daoyi Gao</name>
-                  </p>
-                  <p>I am a PhD student at the <a herf="https://www.3dunderstanding.org">3D AI Lab</a> at <a
-                      href="https://www.tum.de/">Technical University of Munich</a>.
-                  </p>
-                  <p>Previously, I graduated from <a
-                      href="https://www.in.tum.de/fuer-studieninteressierte/master-studiengaenge/robotics-cognition-intelligence/">Robotics, Cognition, Intelligence</a> at TUM.
-                    <!-- Prior to this, I obtained my B.E. from <a href="https://ev.buaa.edu.cn/">Beihang University
-                      (BUAA)</a> majored in mechatronics. -->
-                  </p>
-                  <p>
-                    My research interests are in the field of 3D computer vision, CAD-driven scene understanding, and 3D generative modeling.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:daoyi.gao@tum.de">Email</a> &nbsp/&nbsp
-                    <a href="https://scholar.google.com/citations?user=jbRrxncAAAAJ&hl=zh-CN">Google
-                      Scholar</a>&nbsp/&nbsp
-                    <a href="https://github.com/DaoyiG">Github</a>&nbsp/&nbsp
-                    <a href="https://www.linkedin.com/in/daoyi-gao-4051361ba/">LinkedIn</a>
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="images/IMG_DaoyiG.JPG"><img style="width:100%;max-width:100%" alt="profile photo"
-                      src="images/IMG_DaoyiG.JPG" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Publications</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr onmouseout="pg3d_stop()" onmouseover="pg3d_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='pg3d_image'>
-                      <video width="160" autoplay loop muted playsinline>
-                        <source src="images/pg3d/Teaser.mp4" type="video/mp4">
-                      </video>
+<body class="fixed-top-nav">
+
+  <!-- Header -->
+  <header>
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <div class="container">
+        <!-- Social icons -->
+        <div class="navbar-brand social">
+          <a href="mailto:daoyi.gao@tum.de" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://scholar.google.com/citations?user=jbRrxncAAAAJ&hl=zh-CN" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://github.com/DaoyiG" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/daoyi-gao-4051361ba/" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <!-- Navbar toggle (small screens) -->
+        <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right" id="navbarNav">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item active"><a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#workshops">Workshops</a></li>
+            <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+            <!-- Light/dark toggle -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="Change theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="container mt-5">
+    <div class="post">
+
+      <!-- About -->
+      <section id="about">
+        <header class="post-header">
+          <h1 class="post-title">Daoyi Gao</h1>
+        </header>
+
+        <article>
+          <div class="profile float-right">
+            <figure>
+              <a href="images/IMG_DaoyiG.JPG"><img src="images/profile.jpg" class="img-fluid z-depth-1 rounded-circle" alt="Daoyi Gao"></a>
+            </figure>
+            <div class="address">
+              <p>daoyi.gao[at]tum[dot]de</p>
+            </div>
+          </div>
+
+          <div class="clearfix">
+            <p>I am a PhD student at the <a href="https://www.3dunderstanding.org" rel="external nofollow noopener" target="_blank">3D AI Lab</a> at the <a href="https://www.tum.de/en/" rel="external nofollow noopener" target="_blank">Technical University of Munich</a>.</p>
+            <p>Previously, I graduated from the master's program <a href="https://www.in.tum.de/fuer-studieninteressierte/master-studiengaenge/robotics-cognition-intelligence/" rel="external nofollow noopener" target="_blank">Robotics, Cognition, Intelligence</a> at TUM.</p>
+            <p>My research interests are in the field of 3D computer vision, CAD-driven scene understanding, and 3D generative modeling.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications">
+        <h2 class="section-title">Publications</h2>
+        <div class="publications">
+          <ol class="bibliography">
+
+            <li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row preview">
+                    <div class="preview-media z-depth-1 rounded">
+                      <img src="images/voxlution/sweep_mesh.jpg" class="preview" alt="VoxLution">
+                      <video class="on-hover" muted loop playsinline preload="none"><source src="images/voxlution/sweep.mp4" type="video/mp4"></video>
                     </div>
-                    <img src='images/pg3d/Picture1.png' width="160">
                   </div>
-                  <script type="text/javascript">
-                    function pg3d_start() {
-                      document.getElementById('pg3d_image').style.opacity = "1";
-                    }
+                  <div class="row abbr" style="max-height: 10px; width: 100%; margin-bottom: 20px;">
+                    <abbr class="badge" style="width: 100%;">arXiv</abbr>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="title">VoxLution: Evolving Voxels for High-Fidelity 3D Scene Generation</div>
+                  <div class="author">
+                    <em>Daoyi Gao</em>*,
+                    <a href="https://xzhang-t.github.io" rel="external nofollow noopener" target="_blank">Xinyi Zhang</a>*,
+                    <!-- TODO: link Alexey Bokhovkin's homepage -->
+                    Alexey Bokhovkin,
+                    <a href="https://craigleili.github.io" rel="external nofollow noopener" target="_blank">Lei Li</a>, and
+                    <a href="https://www.3dunderstanding.org/index.html" rel="external nofollow noopener" target="_blank">Angela Dai</a>
+                  </div>
+                  <!-- TODO: venue once accepted -->
+                  <div class="periodical"><em>arXiv</em>, 2026</div>
+                  <div class="links">
+                    <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+                    <a href="https://daoyig.github.io/VoxLution/" class="btn btn-sm z-depth-0" role="button">Project</a>
+                    <a href="https://arxiv.org/abs/2610.41501" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+                    <a href="https://youtu.be/0DAaquV1xK8" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+                    <!-- TODO: code repository (the name DaoyiG/VoxLution is taken by the project-page repo) -->
+                  </div>
+                  <div class="abstract hidden">
+                    <p>We introduce VoxLution, a sparse autoregressive cascade that generates high-fidelity 3D indoor scenes by refining a coarse scene structure from 25&nbsp;cm down to 1.5625&nbsp;cm voxels.</p>
+                  </div>
+                  <div class="contrib-note">* Equal contribution.</div>
+                </div>
+              </div>
+            </li>
 
-                    function pg3d_stop() {
-                      document.getElementById('pg3d_image').style.opacity = "0";
-                    }
-                    pg3d_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                   <a href="https://arxiv.org/pdf/2412.11596">
-                  <papertitle>ProcGen3D: Learning Neural Procedural Graph Representations for Image-to-3D Reconstruction</papertitle>
-                  </a>
-                  <br>
-                  <a href="https://xzhang-t.github.io">Xinyi Zhang</a>,
-                  <strong>Daoyi Gao</strong>,
-                  <a href="https://naiqili.github.io">Naiqi Li</a>,
-                  <a href="https://www.3dunderstanding.org/index.html">Angela Dai</a>
-                  <br>
-                  <em>arXiv</em>, 2025
-                  <br>
-                  <a href="https://xzhang-t.github.io/project/ProcGen3D/">project page</a> /
-                  <a href="https://arxiv.org/abs/2511.07142v1">paper</a> 
-                  <!-- <a href="data/diffcad.txt">bibtex</a> / -->
-                  <!-- <a href="https://github.com/DaoyiG/MeshArt">code</a> -->
-                  <p></p>
-                  <p>We introduce ProcGen3D, a new approach for 3D content creation by generating procedural graph abstractions of 3D objects, which can then be decoded into rich, complex 3D assets. </p>
-                </td>
-              </tr>
-              <tr onmouseout="meshart_stop()" onmouseover="meshart_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='meshart_image'>
-                      <video width="160" autoplay loop muted playsinline>
-                        <source src="images/meshart/000344_crop.mp4" type="video/mp4">
-                      </video>
+            <li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row preview">
+                    <div class="preview-media z-depth-1 rounded">
+                      <img src="images/pg3d/Picture1.png" class="preview" alt="ProcGen3D">
+                      <video class="on-hover" muted loop playsinline preload="none"><source src="images/pg3d/Teaser.mp4" type="video/mp4"></video>
                     </div>
-                    <img src='images/meshart/000344.jpg' width="160">
                   </div>
-                  <script type="text/javascript">
-                    function meshart_start() {
-                      document.getElementById('meshart_image').style.opacity = "1";
-                    }
+                  <div class="row abbr" style="max-height: 10px; width: 100%; margin-bottom: 20px;">
+                    <abbr class="badge" style="width: 100%;">arXiv</abbr>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="title">ProcGen3D: Learning Neural Procedural Graph Representations for Image-to-3D Reconstruction</div>
+                  <div class="author">
+                    <a href="https://xzhang-t.github.io" rel="external nofollow noopener" target="_blank">Xinyi Zhang</a>,
+                    <em>Daoyi Gao</em>,
+                    <a href="https://naiqili.github.io" rel="external nofollow noopener" target="_blank">Naiqi Li</a>, and
+                    <a href="https://www.3dunderstanding.org/index.html" rel="external nofollow noopener" target="_blank">Angela Dai</a>
+                  </div>
+                  <div class="periodical"><em>arXiv</em>, 2025</div>
+                  <div class="links">
+                    <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+                    <a href="https://xzhang-t.github.io/project/ProcGen3D/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Project</a>
+                    <a href="https://arxiv.org/abs/2511.07142v1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+                  </div>
+                  <div class="abstract hidden">
+                    <p>We introduce ProcGen3D, a new approach for 3D content creation by generating procedural graph abstractions of 3D objects, which can then be decoded into rich, complex 3D assets.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-                    function meshart_stop() {
-                      document.getElementById('meshart_image').style.opacity = "0";
-                    }
-                    meshart_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                   <a href="https://arxiv.org/pdf/2412.11596">
-                  <papertitle>MeshART: Generating Articulated Meshes with Structure-guided Transformers</papertitle>
-                  </a>
-                  <br>
-                  <strong>Daoyi Gao</strong>,
-                  <a href="https://nihalsid.github.io">Yawar Siddiqui</a>,
-                  <a href="https://craigleili.github.io">Lei Li</a>,
-                  <a href="https://www.3dunderstanding.org/index.html">Angela Dai</a>
-                  <br>
-                  <em>CVPR</em>, 2025
-                  <br>
-                  <a href="https://daoyig.github.io/Mesh_Art/">project page</a> /
-                  <a href="https://arxiv.org/pdf/2412.11596">paper</a> /
-                  <!-- <a href="data/diffcad.txt">bibtex</a> / -->
-                  <a href="https://github.com/DaoyiG/MeshArt">code</a>
-                  <p></p>
-                  <p>We proposed a hierarchical transformer-based approach to generate articulated 3D meshes with clean, compact geometry.</p>
-                </td>
-              </tr>
-              <tr onmouseout="diffcad_stop()" onmouseover="diffcad_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='diffcad_image'>
-                      <img src='images/diffcad/s4c6.png' width="160">
+            <li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row preview">
+                    <div class="preview-media z-depth-1 rounded">
+                      <img src="images/meshart/000344.jpg" class="preview" alt="MeshArt">
+                      <video class="on-hover" muted loop playsinline preload="none"><source src="images/meshart/000344_crop.mp4" type="video/mp4"></video>
                     </div>
-                    <img src='images/diffcad/scene0549_01_000900.jpg' width="160">
                   </div>
-                  <script type="text/javascript">
-                    function diffcad_start() {
-                      document.getElementById('diffcad_image').style.opacity = "1";
-                    }
+                  <div class="row abbr" style="max-height: 10px; width: 100%; margin-bottom: 20px;">
+                    <abbr class="badge" style="width: 100%;">CVPR25</abbr>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="title">MeshArt: Generating Articulated Meshes with Structure-Guided Transformers</div>
+                  <div class="author">
+                    <em>Daoyi Gao</em>,
+                    <a href="https://nihalsid.github.io" rel="external nofollow noopener" target="_blank">Yawar Siddiqui</a>,
+                    <a href="https://craigleili.github.io" rel="external nofollow noopener" target="_blank">Lei Li</a>, and
+                    <a href="https://www.3dunderstanding.org/index.html" rel="external nofollow noopener" target="_blank">Angela Dai</a>
+                  </div>
+                  <div class="periodical"><em>CVPR</em>, 2025</div>
+                  <div class="links">
+                    <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+                    <a href="https://daoyig.github.io/Mesh_Art/" class="btn btn-sm z-depth-0" role="button">Project</a>
+                    <a href="https://arxiv.org/pdf/2412.11596" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+                    <a href="https://github.com/DaoyiG/MeshArt" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+                  </div>
+                  <div class="abstract hidden">
+                    <p>We propose a hierarchical transformer-based approach to generate articulated 3D meshes with clean, compact geometry.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-                    function diffcad_stop() {
-                      document.getElementById('diffcad_image').style.opacity = "0";
-                    }
-                    diffcad_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2311.18610">
-                  <papertitle>DiffCAD: Weakly-Supervised Probabilistic CAD Model Retrieval and Alignment from an RGB
-                    Image</papertitle>
-                  </a>
-                  <br>
-                  <strong>Daoyi Gao</strong>,
-                  <a href="https://rozdavid.github.io/">Dávid Rozenberszki</a>,
-                  <a href="https://srl.cit.tum.de/members/leuteneg">Stefan Leutenegger</a>,
-                  <a href="https://www.3dunderstanding.org/index.html">Angela Dai</a>
-                  <br>
-                  <em>SIGGRAPH</em>, 2024
-                  <br>
-                  <a href="https://daoyig.github.io/Diff_CAD/">project page</a> /
-                  <a href="https://arxiv.org/abs/2311.18610">paper</a> /
-                  <!-- <a href="data/diffcad.txt">bibtex</a> / -->
-                  <a href="https://github.com/DaoyiG?tab=repositories">code</a>
-                  <p></p>
-                  <p>We proposed a weakly-supervised approach for CAD model retrieval and alignment from an RGB image.
-                    Our approach utilzes diffusion models to tackle the ambiguities in the monocular perception, and
-                    achives robuts cross-domain performance while only trained on synthetic dataset</p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="ppp_stop()" onmouseover="ppp_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='ppp_image'>
-                      <img src='images/PPP.jpg' width="160">
+            <li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row preview">
+                    <div class="preview-media z-depth-1 rounded">
+                      <img src="images/diffcad/scene0549_01_000900.jpg" class="preview" alt="DiffCAD">
+                      <img src="images/diffcad/s4c6.png" class="on-hover" alt="">
                     </div>
-                    <img src='images/PPP.jpg' width="160">
                   </div>
-                  <script type="text/javascript">
-                    function ppp_start() {
-                      document.getElementById('ppp_image').style.opacity = "1";
-                    }
-
-                    function ppp_stop() {
-                      document.getElementById('ppp_image').style.opacity = "0";
-                    }
-                    ppp_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2112.03810">
-                    <papertitle>Polarimetric Pose Prediction</papertitle>
-                  </a>
-                  <br>
-                  <strong>Daoyi Gao*</strong>,
-                  <a href="https://www.linkedin.com/in/yitong-li-29ba12211/"> Yitong Li*</a>,
-                  <a herf="https://www.cs.cit.tum.de/camp/members/external-phd-students/patrick-ruhkamp/">Patrick
-                    Ruhkamp*</a>,
-                  <a href="https://www.linkedin.com/in/iuliiaskobleva/"> Iuliia Skobleva*</a>,
-                  <a href="https://www.linkedin.com/in/magdalena-gawlinska/">Magdalena Wysock*</a>,
-                  <a href="https://www.linkedin.com/in/hyunjun-jung-1a5b45107/">HyunJun Jung</a>,
-                  <a href="https://seasandwpy.github.io/">Pengyuan Wang</a>,
-                  <a href="https://www.linkedin.com/in/arturo-guridi-314400171/">Arturo Guridi</a>,
-                  <a href="https://www.cs.cit.tum.de/camp/members/benjamin-busam/">Benjamin Busam</a>
-                  <br>
-                  <em>ECCV</em>, 2022
-                  <br>
-                  <a href="https://daoyig.github.io/PPPNet/">project page</a> /
-                  <a href="https://arxiv.org/abs/2112.03810">paper</a> /
-                  <!-- <a href="data/ppp.txt">bibtex</a> / -->
-                  <a href="https://github.com/DaoyiG/polarimetric-pose-prediction">code</a>
-                  <p></p>
-                  <p>We proposed a hybrid model that utilizes polarizaiotn information with physical priors in
-                    a data-driven learning strategy to improve the accuracy of pose predictions for photometric
-                    challenging objects.</p>
-                  <p>* Equal contribution. Alphabetical order.</p>
-                </td>
-              </tr>
-
-              <tr onmouseout="tcd_stop()" onmouseover="tcd_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='tcd_image'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/TCD_kitti_09260052_resizedH264.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <img src='images/kitti052_before.jpg' width="160">
+                  <div class="row abbr" style="max-height: 10px; width: 100%; margin-bottom: 20px;">
+                    <abbr class="badge" style="width: 100%;">SIGGRAPH24</abbr>
                   </div>
-                  <script type="text/javascript">
-                    function tcd_start() {
-                      document.getElementById('tcd_image').style.opacity = "1";
-                    }
+                </div>
+                <div class="col-sm-9">
+                  <div class="title">DiffCAD: Weakly-Supervised Probabilistic CAD Model Retrieval and Alignment from an RGB Image</div>
+                  <div class="author">
+                    <em>Daoyi Gao</em>,
+                    <a href="https://rozdavid.github.io/" rel="external nofollow noopener" target="_blank">Dávid Rozenberszki</a>,
+                    <a href="https://srl.cit.tum.de/members/leuteneg" rel="external nofollow noopener" target="_blank">Stefan Leutenegger</a>, and
+                    <a href="https://www.3dunderstanding.org/index.html" rel="external nofollow noopener" target="_blank">Angela Dai</a>
+                  </div>
+                  <div class="periodical"><em>SIGGRAPH</em>, 2024</div>
+                  <div class="links">
+                    <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+                    <a href="https://daoyig.github.io/Diff_CAD/" class="btn btn-sm z-depth-0" role="button">Project</a>
+                    <a href="https://arxiv.org/abs/2311.18610" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+                    <a href="https://github.com/DaoyiG?tab=repositories" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+                  </div>
+                  <div class="abstract hidden">
+                    <p>We propose a weakly-supervised approach for CAD model retrieval and alignment from an RGB image. Our approach utilizes diffusion models to tackle the ambiguities in monocular perception, and achieves robust cross-domain performance while being trained only on synthetic data.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-                    function tcd_stop() {
-                      document.getElementById('tcd_image').style.opacity = "0";
-                    }
-                    tcd_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2110.08192">
-                    <papertitle>Attention meets Geometry: Geometry Guided Spatial-Temporal Attention for Consistent
-                      Self-Supervised Monocular Depth Estimation</papertitle>
-                  </a>
-                  <br>
-                  <a herf="https://www.cs.cit.tum.de/camp/members/external-phd-students/patrick-ruhkamp/">Patrick
-                    Ruhkamp*</a>,
-                  <strong>Daoyi Gao*</strong>,
-                  <a href="https://hanzhic.github.io/">Hanzhi Chen*</a>,
-                  <a href="https://www.in.tum.de/campar/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,
-                  <a href="https://www.cs.cit.tum.de/camp/members/benjamin-busam/">Benjamin Busam</a>
-                  <br>
-                  <em>3DV</em>, 2021
-                  <br>
-                  <a href="https://daoyig.github.io/attention_meets_geometry/">project page</a> /
-                  <a href="https://arxiv.org/abs/2110.08192">paper</a> /
-                  <!-- <a href="data/tcd.txt">bibtex</a> / -->
-                  <a href="https://github.com/DaoyiG/TC-Depth">code</a>
-                  <p></p>
-                  <p>We proposed a self-supervised monocular depth estimation pipeline that aims to improve consistency
-                    while preserving accuracy. We also proposed a new Temporal Consistency Metric (TCM) to quantify
-                    depth consistency across frames.</p>
-                  <p>* Equal contribution. Order determined randomly.</p>
-                </td>
-              </tr>
-
-              <!-- <tr onmouseout="spatialtemp_stop()" onmouseover="spatialtemp_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='spatialtemp_image'>
-                      <img src='images/guided_spatialtempattention.jpg' width="160">
+            <li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row preview">
+                    <div class="preview-media z-depth-1 rounded">
+                      <img src="images/PPP.jpg" class="preview" alt="Polarimetric Pose Prediction">
                     </div>
-                    <img src='images/naive_spatialtempattention.jpg' width="160">
                   </div>
-                  <script type="text/javascript">
-                    function spatialtemp_start() {
-                      document.getElementById('spatialtemp_image').style.opacity = "1";
-                    }
+                  <div class="row abbr" style="max-height: 10px; width: 100%; margin-bottom: 20px;">
+                    <abbr class="badge" style="width: 100%;">ECCV22</abbr>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="title">Polarimetric Pose Prediction</div>
+                  <div class="author">
+                    <em>Daoyi Gao</em>*,
+                    <a href="https://www.linkedin.com/in/yitong-li-29ba12211/" rel="external nofollow noopener" target="_blank">Yitong Li</a>*,
+                    <a href="https://www.cs.cit.tum.de/camp/members/external-phd-students/patrick-ruhkamp/" rel="external nofollow noopener" target="_blank">Patrick Ruhkamp</a>*,
+                    <a href="https://www.linkedin.com/in/iuliiaskobleva/" rel="external nofollow noopener" target="_blank">Iuliia Skobleva</a>*,
+                    <a href="https://www.linkedin.com/in/magdalena-gawlinska/" rel="external nofollow noopener" target="_blank">Magdalena Wysock</a>*,
+                    <a href="https://www.linkedin.com/in/hyunjun-jung-1a5b45107/" rel="external nofollow noopener" target="_blank">HyunJun Jung</a>,
+                    <a href="https://seasandwpy.github.io/" rel="external nofollow noopener" target="_blank">Pengyuan Wang</a>,
+                    <a href="https://www.linkedin.com/in/arturo-guridi-314400171/" rel="external nofollow noopener" target="_blank">Arturo Guridi</a>, and
+                    <a href="https://www.cs.cit.tum.de/camp/members/benjamin-busam/" rel="external nofollow noopener" target="_blank">Benjamin Busam</a>
+                  </div>
+                  <div class="periodical"><em>ECCV</em>, 2022</div>
+                  <div class="links">
+                    <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+                    <a href="https://daoyig.github.io/PPPNet/" class="btn btn-sm z-depth-0" role="button">Project</a>
+                    <a href="https://arxiv.org/abs/2112.03810" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+                    <a href="https://github.com/DaoyiG/polarimetric-pose-prediction" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+                  </div>
+                  <div class="abstract hidden">
+                    <p>We propose a hybrid model that uses polarization information with physical priors in a data-driven learning strategy to improve the accuracy of pose predictions for photometrically challenging objects.</p>
+                  </div>
+                  <div class="contrib-note">* Equal contribution.</div>
+                </div>
+              </div>
+            </li>
 
-                    function spatialtemp_stop() {
-                      document.getElementById('spatialtemp_image').style.opacity = "0";
-                    }
-                    spatialtemp_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://sslad2021.github.io/files/15.pdf">
-                    <papertitle>Spatial-Temporal Attention through Self-Supervised Geometric Guidance</papertitle>
-                  </a>
-                  <br>
-                  <a herf="https://www.cs.cit.tum.de/camp/members/external-phd-students/patrick-ruhkamp/">Patrick
-                    Ruhkamp*</a>,
-                  <strong>Daoyi Gao*</strong>,
-                  <a href="https://hanzhic.github.io/">Hanzhi Chen*</a>,
-                  <a href="https://www.in.tum.de/campar/members/cv-nassir-navab/nassir-navab/">Nassir Navab</a>,
-                  <a href="https://www.cs.cit.tum.de/camp/members/benjamin-busam/">Benjamin Busam</a>
-                  <br>
-                  <em>ICCV Workshop: Self-supervised Learning for Next-Generation Industry-level Autonomous
-                    Driving</em>, 2021
-                  <br>
-                  <a href="https://daoyig.github.io/attention_meets_geometry/">project page</a> /
-                  <a href="https://sslad2021.github.io/files/15.pdf">paper</a> /
-                  <a href="https://github.com/DaoyiG/TC-Depth">code</a>
-                  <p></p>
-                  <p> We proposed a spatial-temporal attention mechanism guided by geometric constraints to aggregate
-                    geometrically meaningful attention and improve temporal depth
-                    stability and accuracy compared to previous methods.</p>
-                  <p>* Equal contribution. Order determined randomly.</p>
-                </td>
-              </tr> -->
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td>
-                  <heading>Workshops</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/logo_usm3d.webp" width="160"></td>
-                <td width="75%" valign="center">
-                  <a href="https://usm3d.github.io/2024/index.html">
-                    1st Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics
-                  </a> <br><br>
-                  <em>CVPR</em>, 2024
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td>
-                  <heading>Teaching</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table width="100%" align="center" border="0" cellpadding="20">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/i2dl.png"></td>
-                <td width="75%" valign="center">
-                  <a href="https://www.cs.cit.tum.de/cg/teaching/winter-term-22-23/machine-learning-for-3d-geometry/">Teaching
-                    Assistant, Machine Learning for 3D Geometry (IN2392)</a> WS 2023/2024, SS 2024, WS 2024/2025, SS 2025, WS 2025/2026
-                    <br><br>
-                  <a href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950567834&pSpracheNr=2">Teaching
-                    Assistant, Techniques in Artificial Intelligence (IN2062)</a> WS 2021/2022 <br>
-                  <br><br>
-                  <a href="https://dvl.in.tum.de/teaching/i2dl-ss20/">Teaching Assistant, Introduction to Deep Learning
-                    (IN2346)</a> SS2020, WS 2020/2021 <br>
-                  <br><br>
-                  <a href="https://www.mw.tum.de/mfm/lehre/hands-on-deep-learning/">Teaching Assistant, Block Seminar
-                    Hands-on Deep Learning</a> SS2020<br>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <br>
-                  <p style="text-align:right;font-size:small;">
-                    Credicts: <a href=" http://jonbarron.info">Jon Barron</a>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-  </table>
+            <li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="row preview">
+                    <div class="preview-media z-depth-1 rounded">
+                      <img src="images/kitti052_before.jpg" class="preview" alt="Attention meets Geometry">
+                      <video class="on-hover" muted loop playsinline preload="none"><source src="images/TCD_kitti_09260052_resizedH264.mp4" type="video/mp4"></video>
+                    </div>
+                  </div>
+                  <div class="row abbr" style="max-height: 10px; width: 100%; margin-bottom: 20px;">
+                    <abbr class="badge" style="width: 100%;">3DV21</abbr>
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="title">Attention meets Geometry: Geometry Guided Spatial-Temporal Attention for Consistent Self-Supervised Monocular Depth Estimation</div>
+                  <div class="author">
+                    <em>Daoyi Gao</em>*,
+                    <a href="https://hanzhic.github.io/" rel="external nofollow noopener" target="_blank">Hanzhi Chen</a>*,
+                    <a href="https://www.cs.cit.tum.de/camp/members/external-phd-students/patrick-ruhkamp/" rel="external nofollow noopener" target="_blank">Patrick Ruhkamp</a>*,
+                    <a href="https://www.in.tum.de/campar/members/cv-nassir-navab/nassir-navab/" rel="external nofollow noopener" target="_blank">Nassir Navab</a>, and
+                    <a href="https://www.cs.cit.tum.de/camp/members/benjamin-busam/" rel="external nofollow noopener" target="_blank">Benjamin Busam</a>
+                  </div>
+                  <div class="periodical"><em>3DV</em>, 2021</div>
+                  <div class="links">
+                    <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+                    <a href="https://daoyig.github.io/attention_meets_geometry/" class="btn btn-sm z-depth-0" role="button">Project</a>
+                    <a href="https://arxiv.org/abs/2110.08192" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+                    <a href="https://github.com/DaoyiG/TC-Depth" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+                  </div>
+                  <div class="abstract hidden">
+                    <p>We propose a self-supervised monocular depth estimation pipeline that improves consistency while preserving accuracy, and a Temporal Consistency Metric (TCM) that quantifies depth consistency across frames.</p>
+                  </div>
+                  <div class="contrib-note">* Equal contribution.</div>
+                </div>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+      </section>
+
+      <!-- Workshops -->
+      <section id="workshops">
+        <h2 class="section-title">Workshops</h2>
+        <div class="publications">
+          <ol class="bibliography">
+            <li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <img src="images/logo_usm3d.webp" class="logo" alt="USM3D">
+                </div>
+                <div class="col-sm-9">
+                  <div class="title"><a href="https://usm3d.github.io/2024/index.html" rel="external nofollow noopener" target="_blank">1st Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics</a></div>
+                  <div class="periodical"><em>CVPR</em>, 2024</div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Teaching -->
+      <section id="teaching">
+        <h2 class="section-title">Teaching</h2>
+        <ul class="teaching">
+          <li>Teaching Assistant, <a href="https://www.cs.cit.tum.de/cg/teaching/winter-term-22-23/machine-learning-for-3d-geometry/" rel="external nofollow noopener" target="_blank">Machine Learning for 3D Geometry (IN2392)</a><br><span class="term">WS 2023/2024, SS 2024, WS 2024/2025, SS 2025, WS 2025/2026, SS 2026, WS 2026/2027</span></li>
+          <li>Teaching Assistant, <a href="https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950567834&pSpracheNr=2" rel="external nofollow noopener" target="_blank">Techniques in Artificial Intelligence (IN2062)</a><br><span class="term">WS 2021/2022</span></li>
+          <li>Teaching Assistant, <a href="https://dvl.in.tum.de/teaching/i2dl-ss20/" rel="external nofollow noopener" target="_blank">Introduction to Deep Learning (IN2346)</a><br><span class="term">SS 2020, WS 2020/2021</span></li>
+          <li>Teaching Assistant, <a href="https://www.mw.tum.de/mfm/lehre/hands-on-deep-learning/" rel="external nofollow noopener" target="_blank">Block Seminar Hands-on Deep Learning</a><br><span class="term">SS 2020</span></li>
+        </ul>
+      </section>
+
+      <div style="height: 4rem;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="fixed-bottom">
+    <div class="container mt-0">
+      © Copyright 2026 Daoyi Gao. Design based on the <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+    </div>
+  </footer>
+
+  <!-- jQuery, Bootstrap & MDB scripts (navbar collapse on small screens) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
 </body>
 
 </html>

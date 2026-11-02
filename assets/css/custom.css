@@ -1,0 +1,82 @@
+/* Site-specific additions on top of the al-folio stylesheet (main.css). */
+
+/* Accent colour: links, active nav item, venue badges. Light theme first, then dark theme. */
+:root {
+  --global-theme-color: #4a5568;
+  --global-hover-color: #4a5568;
+}
+html[data-theme=dark] {
+  --global-theme-color: #a9b6c8;
+  --global-hover-color: #a9b6c8;
+}
+
+/* Section anchors land below the fixed navbar. */
+section {
+  scroll-margin-top: 72px;
+}
+h2.section-title {
+  font-weight: 300;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Publication previews: a still image; on hover, the video or second image fades in over it.
+   Every preview is a 1:1 white box; non-square media are padded (letterboxed), never cropped. */
+.preview-media {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.preview-media img.preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.preview-media .on-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+.publications ol.bibliography li:hover .preview-media .on-hover {
+  opacity: 1;
+}
+.publications ol.bibliography li .contrib-note {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+
+/* Workshop logo and teaching list. */
+.publications ol.bibliography li img.logo {
+  width: 100%;
+  max-width: 120px;
+}
+ul.teaching {
+  padding-left: 1.2rem;
+}
+ul.teaching li {
+  margin-bottom: 0.6rem;
+}
+ul.teaching .term {
+  color: var(--global-text-color-light);
+}
+
+/* Keep the venue badge as wide as its preview on narrow screens. */
+.publications ol.bibliography li .abbr {
+  max-width: 200px;
+}
+
+/* The dark-theme accent is light, so the badge text switches to the dark background colour
+   (!important because MDB sets .badge { color: #fff !important; }). */
+html[data-theme=dark] .publications ol.bibliography li .abbr abbr {
+  color: var(--global-bg-color) !important;
+}
